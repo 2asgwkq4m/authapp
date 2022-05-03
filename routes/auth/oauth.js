@@ -49,8 +49,8 @@ const signInOrSignUp = async (profile) => {
 }
 // Auth with google
 passport.use(new GoogleStrategy({
-    clientID:     '664311173646-t4cda5rfhh777l8sckql18pphom7nf6d.apps.googleusercontent.com',
-    clientSecret: 'EZLFGIOBeKAfPwGf2JZdn3dL',
+    clientID:     process.env.G_AUTH_CLIENT_ID,
+    clientSecret: process.env.G_AUTH_SECRET,
     //callbackURL: hostUrl('google'),
     passReqToCallback   : true
   },
@@ -62,8 +62,8 @@ passport.use(new GoogleStrategy({
 
 // Auth with facebook
 passport.use(new FacebookStrategy({
-    clientID: '898921100931485',
-    clientSecret: '9aff514bfcac775bc1c241507ad0fa6c',
+    clientID: process.env.F_AUTH_CLIENT_ID,
+    clientSecret: process.env.F_AUTH_SECRET,
     //callbackURL: hostUrl('facebook'),
     passReqToCallback   : true,
     profileFields: ['id', 'displayName', 'email', 'name', 'picture.type(large)', 'profileUrl']
