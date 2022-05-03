@@ -2,9 +2,10 @@
   "name": "vercel",
   "version": "0.0.0",
   "private": true,
+  "main": "./bin/www",
   "scripts": {
     "dev": "nodemon ./bin/www",
-    "start": "node ./bin/www"
+    "start": "./bin/www"
   },
   "dependencies": {
     "better-sqlite3": "^7.5.1",
