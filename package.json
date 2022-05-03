@@ -1,5 +1,5 @@
 {
-  "name": "vercel",
+  "name": "authapp",
   "version": "0.0.0",
   "private": true,
   "main": "./bin/www",

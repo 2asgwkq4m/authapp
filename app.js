@@ -1,6 +1,3 @@
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-}
 var express = require('express');
 const session = require('express-session');
 const passport = require('passport');
